@@ -1,0 +1,46 @@
+/* 実験WebPage created by Wakayama Univ. AMLAB */
+/* 音声了解度実験用CSS */
+
+/* Stepbar */
+.stepBar {
+  display: flex;
+  width: 400px;
+  position: relative;
+  margin: 50px calc(50% - 224px);
+}
+.stepBar li {
+  font-size: 12px;
+  list-style: none;
+  position: relative;
+  width: 33.333%;
+}
+.stepBar li:after {
+  background: #DED7D5;
+  content: "";
+  width: calc(100% - 24px);
+  height: 4px;
+  position: absolute;
+  left: calc(-50% + 12px);
+  top: 10px;
+}
+.stepBar li:first-child:after {
+  display: none;
+}
+.stepBar li span {
+  background: #DED7D5;
+  color: #ffffff;
+  display: inline-block;
+  height: 24px;
+  margin-bottom: 5px;
+  line-height: 24px;
+  width: 24px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.stepBar .visited:after {
+  background: #f16b6f;
+}
+.stepBar .visited span {
+  background: #f16b6f;
+}

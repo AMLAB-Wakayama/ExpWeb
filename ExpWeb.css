@@ -1,0 +1,346 @@
+/* 実験WebPage created by Wakayama Univ. AMLAB */
+/* CSS for all */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', 'sans-serif';
+  color: black;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+header {
+  padding: 30px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d6dedc;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.body-top{
+  margin-top: 200px;
+}
+
+.header-top{
+  padding: 50px 4% 30px;
+}
+
+.h1-top{
+  margin: auto;
+  padding: auto;
+  font-size: 40px;
+}
+
+.header-right{
+  margin: 0 0 0 auto;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+h2:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #DED7D5;
+  border-radius: 2px;
+}
+
+span{
+  color:#f16b6f;
+  font-weight: bold;
+}
+
+.ss {
+  margin-bottom: 3em;
+}
+
+.margin-b-50px{
+  margin-bottom: 50px;
+}
+
+.margin-b-30px {
+  margin-bottom: 30px;
+}
+
+.margin-tb-20px {
+  margin: 20px auto;
+}
+
+.margin-t-3em {
+  margin-top: 3em;
+}
+
+.margin-tb-2per{
+  margin: 2% auto;
+}
+
+.font-25px {
+  font-size: 25px;
+}
+
+.font-20px-red {
+  font-size: 20px;
+  color: #f16b6f;
+  margin-top: 10px;
+}
+
+.font-14px-red{
+  color:#f16b6f;
+  font-size:14px;
+}
+
+input[type='text']{
+  width: 100px;
+  max-width: 400px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ファイルフォーム */
+input[type="file"] {
+  display: none;
+}
+
+/* button */
+.btn{
+  display: block;
+	text-decoration:none;
+	width: 120px;
+	padding: 0.6em;
+	text-align: center;
+	color: #FFF;
+	border-radius: 4px;
+	background: #7D918C;
+  overflow: hidden;
+  margin: 40px auto;
+  cursor: pointer;
+}
+.btn .label{
+  display:inline-block;
+	transition: .5s
+}
+.btn:hover .label{
+  transform: rotateX(360deg);
+}
+
+.btn:disabled {
+  pointer-events: none;
+  background-color: #DED7D5;
+}
+
+/* button long */
+.lbtn{
+  display: block;
+	text-decoration:none;
+	width: 180px;
+	padding: 0.6em;
+	text-align: center;
+	color: #FFF;
+	border-radius: 4px;
+	background: #7D918C;
+  overflow: hidden;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.lbtn .label{
+  display:inline-block;
+	transition: .5s
+}
+.lbtn:hover .label{
+  transform: rotateX(360deg);
+}
+.lbtn:disabled {
+  background-color: #DED7D5;
+}
+
+/* button gray */
+.btn-gray{
+  display: block;
+	text-decoration:none;
+	width: 120px;
+	padding: 0.6em;
+	text-align: center;
+	color: black;
+	border-radius: 4px;
+	background: #DED7D5;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.btn-gray .label{
+  display:inline-block;
+	transition: .5s
+}
+.btn-gray:hover .label{
+  transform: rotateX(360deg);
+}
+
+/* 実験説明書の表示 */
+.box-txt {
+  overflow: auto;
+  width:60%;
+  height:300px;
+  padding:5px;
+  border:1px solid #000;
+  background-color:#F9F9F9;
+  color:#000;
+  font-size:12px;
+  margin: 20px auto 10px auto;
+  text-align: left;
+}
+
+.box-w60per {
+  width: 60%;
+  margin: auto;
+}
+
+.frame-red {
+  padding: 0.5em 1em;
+  margin: 2em auto;
+  max-width: 60%;
+  font-weight: bold;
+  background: #FFF;
+  border: solid 3px #f16b6f;
+  border-radius: 10px;
+  word-break: break-all;
+}
+
+.frame-gray {
+  padding: 0.5em 1em;
+  margin: 2em auto;
+  width: 40%;
+  font-weight: bold;
+  background: #FFF;
+  border: solid 3px #DED7D5;
+  border-radius: 10px;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+.box-clm {
+  height: 300px;
+  display: flex;
+}
+
+.clm {
+  width: 50%;
+  height: 100%;
+  padding-top: 60px;
+  vertical-align: middle;
+}
+
+.clm-title {
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.clm-title:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #DED7D5;
+  border-radius: 2px;
+}
+
+.clm-content {
+  height: 30px;
+  margin-top:50px;
+}
+
+.align{
+  vertical-align: top;
+}
+
+/* ライン */
+.v_line_fix {
+  margin: auto;
+  width: 1px;
+  height: 65%;
+  background-color: #7D918C;
+}
+
+/* .list */
+.list-box{
+  margin: 10px auto;
+}
+
+.index{
+  margin: 0.5em auto;
+}
+
+.index:before {
+  content: '';
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  margin-right: .5em;
+  background: #7d918c;
+  transform: rotate(45deg);
+  vertical-align: 2px;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+table tr{
+  border-bottom: solid 1px #eee;
+}
+
+table th{
+  font-size: 20px;
+  text-align: center;
+  width: 30%;
+  padding: 15px 0;
+}
+table td{
+  text-align: left;
+  width: 40%;
+  padding: 15px 0;
+}
+table td .ss {
+  margin-bottom: 3em;
+}

@@ -1,0 +1,70 @@
+/* 実験WebPage created by Wakayama Univ. AMLAB */
+/* 一対比較実験用CSS */
+
+.flex{
+  display: flex;
+  width: 68%;
+  align-items: center;
+  margin: auto;
+}
+
+.flex .btn {
+  width: 100px;
+}
+
+/* Stepbar */
+ol {
+  padding-inline-start: 0%;
+}
+.stepBar {
+  display: flex;
+  width: 55%;
+  position: relative;
+  margin: auto;
+  margin-top: -20px;
+}
+.stepBar li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+.stepBar li:after {
+  background: #DED7D5;
+  content: "";
+  width: calc(100% - 10px);
+  height: 2px;
+  position: absolute;
+  left: calc(-50% + 5px);
+  top: 4px;
+}
+.stepBar li:first-child:after {
+  display: none;
+}
+.stepBar li span {
+  background: #DED7D5;
+  color: #ffffff;
+  display: inline-block;
+  height: 10px;
+  margin-bottom: 10px;
+  width: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.illuminate span{
+  background: #DED7D5;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.6em;
+  /* margin-bottom: 5px; */
+  line-height: 24px;
+  width: 100px;
+  /* width: 80px; */
+  -moz-border-radius: 30%;
+  -webkit-border-radius: 30%;
+  border-radius: 30%;
+}
+.illuminate .visited span {
+  background: #f16b6f;
+}
