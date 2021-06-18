@@ -1,0 +1,13 @@
+/* 実験WebPage created by Wakayama Univ. AMLAB */
+/* 二肢強制選択用CSS */
+
+
+.mf_btn {
+  margin: 50px auto;
+}
+
+.flex{
+  display: flex;
+  width: 40%;
+  margin: auto;
+}
