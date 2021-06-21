@@ -24,7 +24,7 @@
 ここで例題として使用した音声は、ESPNetを用いて合成しました。
 [GoogleColab espnet2_tts_demo](https://colab.research.google.com/github/espnet/notebook/blob/master/espnet2_tts_realtime_demo.ipynb) にテキストを入力して音声合成し、48kHzにリサンプリングしました。（開発者に感謝いたします。）
 
-同梱されている合成音声のライセンスは，JSUTコーパスのプロジェクトページ（https://sites.google.com/site/shinnosuketakamichi/publication/jsut)
+同梱されている合成音声のライセンスは、JSUTコーパスのプロジェクトページ（https://sites.google.com/site/shinnosuketakamichi/publication/jsut)
 をご参照下さい。
 
 実験で提示する音声／音響信号は、かならず48kHz, 16bitのwav fileにしてください。それ以外だと再生されないこともあるかもしれません。
